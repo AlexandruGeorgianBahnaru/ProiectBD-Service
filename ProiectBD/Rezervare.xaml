@@ -1,0 +1,34 @@
+﻿<Page x:Class="ProiectBD.Rezervare"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProiectBD"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Rezervare">
+
+    <Grid>
+        <StackPanel Margin="20">
+            <Label Content="Data rezervării:"/>
+            <DatePicker x:Name="datePickerRezervare"/>
+
+            <Label Content="Nume:"/>
+            <TextBox x:Name="txtNume"/>
+
+            <Label Content="Prenume:"/>
+            <TextBox x:Name="txtPrenume"/>
+
+            <Label Content="Număr înmatriculare:"/>
+            <TextBox x:Name="txtNrInmatriculare"/>
+
+            <Label Content="Marcă:"/>
+            <TextBox x:Name="txtMarca"/>
+
+            <Label Content="An fabricație:"/>
+            <DatePicker x:Name="datePickerAnFabricatie" />
+
+            <Button x:Name ="rezervareButton" Content="Adaugă Rezervare" Click="rezervareButton_CLick" />
+        </StackPanel>
+    </Grid>
+</Page>
